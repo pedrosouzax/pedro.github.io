@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes — Pedro</title>
+  <meta name="description" content="Pedro's notes and write-ups — short summaries of concepts, ideas, and things learned along the way." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Pedro</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="studies.html">Studies</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="notes.html">Notes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Page Content ───────────────────────── -->
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page header -->
+      <header class="page-header fade-in">
+        <h1>Notes</h1>
+        <p>Short write-ups on concepts I want to remember, explain, or think through. Click any note to expand it.</p>
+      </header>
+
+      <!-- Notes accordion -->
+      <div id="notes-container">
+        <!-- Populated by main.js -->
+      </div>
+
+      <!-- How to add a note -->
+      <div style="margin-top:40px; padding:20px 24px; background:var(--surface); border:1px dashed var(--border-hover); border-radius:var(--radius-lg);">
+        <h4 style="margin-bottom:8px; color:var(--text-muted);">✏️ Adding a note</h4>
+        <p style="font-size:.875rem; color:var(--text-muted); line-height:1.65;">
+          Open <code style="font-size:.82rem; background:var(--bg); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">js/data.js</code>
+          and add an entry to the <code style="font-size:.82rem; background:var(--bg); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">NOTES</code> array.
+          Basic HTML tags like <code style="font-size:.82rem; background:var(--bg); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">&lt;strong&gt;</code>
+          and <code style="font-size:.82rem; background:var(--bg); padding:2px 6px; border-radius:4px; border:1px solid var(--border);">&lt;em&gt;</code> are supported in the body.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
